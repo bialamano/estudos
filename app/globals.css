@@ -18,10 +18,43 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #2e1d1d;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: calc(100px * 8);
+  height: calc(100px * 8);
+  margin: 0 auto;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  position: absolute;
+  left: 50%;
+}
+
+.isEven {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+
+.isOdd {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.tabuleiroWrapper {
+  display: flex;
+}
+
+.normal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
